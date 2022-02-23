@@ -13,10 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="/styles/reset.css" type="text/css" />
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -29,11 +32,22 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span id="tweeter-logo">tweeter</span>
-        <div class="write-a-new-tweet">
-          <span><strong>Write</strong> a new tweet</span>
-          <i class="fa-solid fa-angles-down"></i>
-        </div>
+      <div class="write-a-new-tweet">
+        <span><strong>Write</strong> a new tweet</span>
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
     </nav>
+
+    <!-- User information header -->
+    <header id="user-info">
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2><strong>Amy</strong> Mansell</h2>
+      </div>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container"></main>
