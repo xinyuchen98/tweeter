@@ -60,13 +60,22 @@ $(document).ready(() => {
 
   $("#post-tweet").submit(function(event) {
     event.preventDefault();
-    const formData = $(this).serialize();
-    this.reset();
-    $.ajax({
-      method: 'POST',
-      url: '/tweets',
-      data: formData
-    });
+    const tweetLength = $("#tweet-text").val().length;
+    if (tweetLength === 0) {
+      window.alert("Your tweet cannot be empty");
+    } else if (tweetLength > 140) {
+      window.alert("Your tweet cannot exceed 140 characters");
+    } else {
+      const formData = $(this).serialize();
+      this.reset();
+      $.ajax({
+        method: 'POST',
+        url: '/tweets',
+        data: formData
+      }).then(() => {
+        loadTweets();
+      });
+    }
   });
 
   loadTweets();
