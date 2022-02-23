@@ -57,6 +57,17 @@
     <main class="container">
       <!-- New tweeter form -->
       <section id="new-tweet">
+        <!-- Error messages -->
+        <div class="tweet-input-error too-long" style="display:none;">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span class="error-message">Your tweet is too long. (Limit: 140 characters) </span>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <div class="tweet-input-error empty" style="display:none;">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span class="error-message">Your tweet is empty. </span>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
         <form method='POST' action="/tweets" id="post-tweet">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="button-counter">

@@ -60,11 +60,12 @@ $(document).ready(() => {
 
   $("#post-tweet").submit(function(event) {
     event.preventDefault();
+    $(".tweet-input-error").slideUp(100);
     const tweetLength = $("#tweet-text").val().length;
     if (tweetLength === 0) {
-      window.alert("Your tweet cannot be empty");
+      $(".tweet-input-error.empty").slideDown(250);
     } else if (tweetLength > 140) {
-      window.alert("Your tweet cannot exceed 140 characters");
+      $(".tweet-input-error.too-long").slideDown(250);
     } else {
       const formData = $(this).serialize();
       this.reset();
