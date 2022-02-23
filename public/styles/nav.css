@@ -17,18 +17,38 @@
   margin-right: 2em;
 }
 
+/* Change the color of the arrow to red */
 .fa-angles-down {
   color: red;
 }
 
+/* Position and background of the navigation bar */
 nav {
   overflow: hidden;
   position: fixed;
   top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   height: 120px;
   width: 100vw;
   background-color: #4056A1;
   color: #FFFFFF;
+}
+
+#logo-pointer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5em 0 0.5em 0;
+}
+
+/* Display the header in tablet layout */
+.user-info-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0 2em 0;
+  font-size: 1.5em;
 }

@@ -1,13 +1,16 @@
+/* Tweet block CSS */
 article {
   margin: 2em 0em;
   border: 0.2em solid #545149;
   width: 100%;
 }
 
+/* Display shadow on hover */
 article:hover {
   box-shadow: 0.2em 0.2em #4056A1;
 }
 
+/* Header layout */
 .tweet-header {
   display: flex;
   flex-direction: row;
@@ -15,6 +18,7 @@ article:hover {
   padding: 1em 1.2em 0.5em 1em;
 }
 
+/* Footer layout */
 .tweet-footer {
   display: flex;
   flex-direction: row;
@@ -22,11 +26,13 @@ article:hover {
   padding: 0.2em 1.2em 1em 1.2em;
 }
 
+/* Buttons layout */
 .tweet-buttons {
   display: flex;
   justify-content: space-evenly;
 }
 
+/* Tweet content styling */
 .tweet-content {
   color: #545149;
   background-color: #f4f1ec;
@@ -38,6 +44,7 @@ article:hover {
   padding: 0.5em 1.2em;
 }
 
+/* The bottom line */
 .tweet-content:after {
   content: "";
   display: block;
@@ -45,6 +52,7 @@ article:hover {
   padding: 0.5em 1.2em;
 }
 
+/* Add space between avatar and the name */
 .tweet-avatar-name {
   display: flex;
   flex-direction: row;
@@ -52,6 +60,7 @@ article:hover {
   align-items: center;
 }
 
+/* Padding for bottom right buttons */
 .fa-heart {
   padding-left: 0.5em;
 }
@@ -60,24 +69,28 @@ article:hover {
   padding-right: 0.5em;
 }
 
+/* Different color and cursor on hover for bottom right buttons */
 .fa-flag:hover, .fa-retweet:hover, .fa-heart:hover {
   color: #ffcc00;
   cursor: pointer;
-  
 }
 
+/* Smaller text for time */
 .tweet-time {
   font-size: 0.8em;
 }
 
+/* Blue username text */
 .tweet-username {
   color: #4056A1;
 }
 
+/* Padding for name on top left corner */
 .tweet-fullname {
   padding-left: 0.5em;
 }
 
+/* Margin for all tweets section */
 #all-tweets {
   margin: 1em 0 2em 0;;
 }

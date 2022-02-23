@@ -24,15 +24,16 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- main {
+/* Main container layout in desktop layout */
+main {
   width: 50%;
   color: #545149;
   background-color: #f4f1ec;
-  margin-top: 120px;
   margin: 5%;
+  margin-top: 120px;
   float: right;
 }
 
- strong {
+strong {
   font-weight: bold;
 }

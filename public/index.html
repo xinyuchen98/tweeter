@@ -46,6 +46,7 @@
           <i class="fa-solid fa-angles-down"></i>
         </div>
       </div>
+      <!-- Header for tablet layout -->
       <div class="user-info-nav">
         <div>
             <img src="/images/profile-hex.png"> 
@@ -56,7 +57,7 @@
         </div>
     </nav>
 
-    <!-- User information header -->
+    <!-- User information header (Desktop layout) -->
     <header id="user-info">
       <div>
           <img src="/images/profile-hex.png"> 
@@ -69,7 +70,7 @@
 
     <!-- Page-specific (main) content here -->
     <main>
-      <!-- New tweeter form -->
+      <!-- Write a new tweet section -->
       <section id="new-tweet">
         <!-- Error messages -->
         <div class="tweet-input-error too-long" style="display:none;">
@@ -82,6 +83,7 @@
           <span class="error-message">Your tweet is empty. </span>
           <i class="fa-solid fa-triangle-exclamation"></i>
         </div>
+        <!-- New tweeter form -->
         <form method='POST' action="/tweets" id="post-tweet">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="button-counter">
@@ -90,6 +92,7 @@
           </div>
         </form>
       </section>
+      <!-- All tweets section -->
       <section id="all-tweets"></section>
     </main>
   </body>

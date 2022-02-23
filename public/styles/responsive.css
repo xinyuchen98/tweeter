@@ -1,10 +1,12 @@
 /* CSS for tablet layout */
 @media screen and (max-width: 1024px) {
+  /* Hide the header in desktop layout */
   #user-info {
     float: none;
     display: none;
   }
 
+  /* Put the main container in center */
   main {
     float: none;
     width: 90%;
@@ -12,46 +14,18 @@
     margin-top: 540px;
   }
 
+  /* Change the navigation bar background */
   nav {
-    display: flex;
-    flex-direction: column;
     background-color: #d3a211;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     height: 500px;
-  }
-
-  #logo-pointer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.5em 0 0.5em 0;
-  }
-
-  .user-info-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em 0 2em 0;
-    font-size: 1.5em;
   }
 }
 
 /* CSS for desktop layout */
 @media screen and (min-width: 1024px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-
+  /* Hide the header in tablet mode */
   .user-info-nav {
     display: none;
-  }
-
-  #logo-pointer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.5em 0 0.5em 0;
   }
 }

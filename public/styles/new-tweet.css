@@ -1,7 +1,9 @@
+/* Set margin for the new tweet section */
 #new-tweet {
   margin: 2em 0 1em 0;
 }
 
+/* Submit tweet button */
 button {
   color: #FFFFFF;
   background-color: #4056A1;
@@ -11,11 +13,17 @@ button {
   padding: 0.1em 0.5em;
 }
 
+button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
 .counter {
   font-family: 'Bungee', sans-serif;
   font-size: 1.2em;
 }
 
+/* New tweet input field */
 #tweet-text {
   color: #545149;
   background-color: #f4f1ec;
@@ -28,12 +36,14 @@ button {
   font-weight: bold;
 }
 
+/* The footer */
 .button-counter {
   display: flex;
   justify-content: space-between;
   padding-top: 0.5em;
 }
 
+/* Style the error messages */
 .tweet-input-error {
   color: red;
   font-weight: bold;
