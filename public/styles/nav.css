@@ -1,3 +1,34 @@
+/* Navigation bar CSS styles */
+
 #tweeter-logo {
+  display: flex;
+  font-size: 1.5em;
   font-family: 'Bungee', cursive;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.write-a-new-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.fa-angles-down {
+  color: red;
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  width: 100vw;
+  background-color: #4056A1;
+  color: #FFFFFF;
 }
