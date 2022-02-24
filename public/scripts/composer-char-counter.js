@@ -6,11 +6,8 @@ $(document).ready(function() {
     const lengthLimit = 140;
     const inputLength = $(this).val().length;
 
-    // Find the form
-    const form = $(this).closest('form');
-
-    // Find the counter in the form
-    const counter = $(form).find('.counter');
+    // Find the counter
+    const counter = $('#counter');
 
     if (inputLength > lengthLimit) {
       // Display the counter in red if input length exceeds the length limit

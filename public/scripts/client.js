@@ -102,6 +102,9 @@ $(document).ready(function() {
         url: '/tweets',
         data: formData
       }).then(() => {
+        // Reset the counter
+        $('#counter').text('140');
+
         // Reload all tweets
         loadTweets();
       });
