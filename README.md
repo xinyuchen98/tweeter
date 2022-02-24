@@ -8,7 +8,8 @@ Tweeter is a social networking site that allows users to post messages.
 2. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. Tweeter will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
-5. Write your tweets. 
+5. Write your tweets, make sure your tweet is not empty and does not exceed the 140 characters length limit. 
+6. Submit your tweets with TWEET button. 
 
 ## Screenshots
 
